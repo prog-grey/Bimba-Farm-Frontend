@@ -1,0 +1,1 @@
+echo "# Bimba-Farm-Frontend" >> README.md
