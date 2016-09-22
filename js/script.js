@@ -7,27 +7,29 @@ $(document).ready(function(){
 	});
 
 	// появление/скрытие поиска
+	var searchBlock = $('.searchBlock');
 	$('.searchIcon>i').click(function(e){
 		if( e.currentTarget.className == 'mdi mdi-magnify' ){
 			$('.searchIcon>i.mdi-magnify').removeClass('mdi-magnify').addClass('mdi-close');
-			$('.searchBlock').fadeIn(750).css('display', 'block');
+			$(searchBlock).fadeIn(750).css('display', 'block');
 		}
 		else if( e.currentTarget.className == 'mdi mdi-close' ){
 			$('.searchIcon>i.mdi-close').removeClass('mdi-close').addClass('mdi-magnify');
-			$('.searchBlock').fadeOut(750);
+			$(searchBlock).fadeOut(750);
 		}
 	});
 
 	// появдение/скрытие кнопки "вверх"
+	var btnToTop = $('.btnToTop');
 	$(window).scroll(function(){
 		if( $(this).scrollTop() <= 500 && $(this).scrollTop() == 0 )
-			$('.btnToTop').fadeOut();
+			$(btnToTop).fadeOut();
 		else if( $(this).scrollTop() > 500 )
-			$('.btnToTop').fadeIn();
+			$(btnToTop).fadeIn();
 	});
 
 	// при клике на кнопку "вверх" плавно возвращаемся в начало страницы
-	$('.btnToTop').click(function(){
+	$(btnToTop).click(function(){
 		$('body').animate({scrollTop: 0}, 1000);
 	});
 
