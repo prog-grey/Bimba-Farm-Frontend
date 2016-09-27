@@ -5,9 +5,9 @@
 }
 @media (width: 1200px){
 	.template{
-		background: url("../template/lg (start)/cart.jpg");
-		width: 1140px;
-		height: 1819px;
+		background: url("../template/lg (start)/template.jpg");
+		width: 1138px;
+		height: 2844px;
 	}
 	.main{
 		opacity: 0.7;
@@ -15,9 +15,9 @@
 }
 @media (width: 992px){
 	.template{
-		background: url("../template/md (start)/login.jpg");
+		background: url("../template/md (start)/template.jpg");
 		width: 940px;
-		height: 2278px;
+		height: 2733px;
 	}
 	.main{
 		opacity: 0.7;
@@ -25,9 +25,9 @@
 }
 @media (width: 991px){
 	.template{
-		background: url("../template/sm (end)/login.jpg");
+		background: url("../template/sm (end)/template.jpg");
 		width: 720px;
-		height: 2597px;
+		height: 3812px;
 	}
 	.main{
 		opacity: 0.7;
@@ -35,9 +35,9 @@
 }
 @media (width: 767px){
 	.template{
-		background: url("../template/xs (end)/login.jpg");
+		background: url("../template/xs (end)/template_2.jpg");
 		width: 720px;
-		height: 2982px;
+		height: 3977px;
 	}
 	.main{
 		opacity: 0.7;
@@ -45,15 +45,6 @@
 }
 .main{
 	position: relative;
-}
-.block_1{
-	background: #f00;
-}
-.block_2{
-	background: #0f0;
-}
-.block_3{
-	background: #ddd;
 }*/
 /*-----------------------------------------------------------------------------------------------*/
 @font-face{
@@ -99,7 +90,7 @@ header{
 }
 
 .listLangAndCurr{
-	margin: 0 36px 0 1px;
+	margin: 0 37px 0 0;
 }
 
 .listLangAndCurr>li{
@@ -180,8 +171,10 @@ header{
 
 .headerTop .userAccount{
 	font-family: Ubuntu-Medium;
-	position: relative;
-	top: -2px;
+	/*position: relative;
+	top: -2px;*/
+	float: right;
+	margin: 7px 0 0 0;
 }
 
 .headerTop .userAccount>li>a, .order a, .navbarMain .navbar-nav>li>a, ul.footerNavMenu>li>a, .footerContact>ul>li>a:hover, .social .socialIcons>li>a{
@@ -310,13 +303,12 @@ header{
 }
 
 .navbarMain .navbar-nav>li{
-	width: 15.87%;
-	padding: 12px 5px 12px 7px;
+	padding: 10px 5px;
 }
 
 .navbarMain .navbar-nav>li>a{
 	text-transform: uppercase;
-	padding: 5px 0;
+	padding: 18px 40px;
 	line-height: 23px;
 }
 
@@ -419,7 +411,7 @@ header{
 }
 
 #specialProductsContainer{
-	padding: 0 0 62px 0;
+	padding: 0 0 66px 0;
 }
 
 .headerName a, .headerName h3{
@@ -613,6 +605,10 @@ button.addToCart:hover, form#formSubscription button.btn-default, button.btnToTo
 	top: 39px;
 }
 
+.infoBlock h1>i.mdi-sale{
+	top: 23px;
+}
+
 .infoBlock h1{
 	font-family: Montserrat-Regular, sans-serif;
 	padding: 0 55px 19px 85px;
@@ -774,7 +770,7 @@ button.btnToTop:hover{
 }
 
 .panel-default .panel-heading, .tableCart td.sale, .tableCart td.total, .tableCart td.summa strong{
-	border: 0;
+	border: 0 !important;
 }
 
 .panel-default .panel-heading{
@@ -820,7 +816,7 @@ button.btnToTop:hover{
 	display: inline-block;
 }
 
-#filterForm label>input[type="checkbox"]{
+#filterForm label>input[type="checkbox"], #filterForm label>input[type="radio"]{
 	margin: 4px 6px 0 0;
 	position: relative;
 }
@@ -1173,6 +1169,12 @@ button.btnToTop:hover{
 	margin: 10px 0;
 }
 
+.tableCart input.countProduct{
+	padding: 0 !important;
+	height: 40px !important;
+
+}
+
 .cellProductName .productName, .tableCart .totalPrice{
 	font-family: Ubuntu-Bold;
 }
@@ -1210,12 +1212,12 @@ button.btnToTop:hover{
 }
 
 #cartContainer button.addToCart{
-	margin: 0 50px 0 0;
+	margin: 30px 0 0 0;
 }
 /*-----------------------------------------------------------------------------------------------*/
 @media(min-width: 992px) and (max-width: 1199px){
 	.headerTop{
-		padding-bottom: 8px;
+		padding-bottom: 16px;
 	}
 	.listLangAndCurr{
 		margin-left: 0;
@@ -1230,8 +1232,7 @@ button.btnToTop:hover{
 		padding-right: 3px:
 	}
 	.headerTop .userAccount{
-		float: right;
-		top: 2px;
+		margin: 2px 0 0 0;
 	}
 	.headerTop address>.workingHours{
 		padding-right: 0;
@@ -1260,7 +1261,7 @@ button.btnToTop:hover{
 		display: table-cell;
 	}
 	#specialProductsContainer{
-		padding-bottom: 5px;
+		padding-bottom: 9px;
 	}
 	form#formSubscription input{
 		width: 159px;
@@ -1280,6 +1281,15 @@ button.btnToTop:hover{
 	}
 	.headerTop address>.workingHours, .headerTop .userAccount{
 		display: block;
+	}
+	.headerTop .userAccount{
+		float: none;
+		margin: 0 0 10px 0;
+		position: relative;
+		top: -2px;
+	}
+	.headerTop .userAccount li:first-child{
+		padding-left: 0;
 	}
 	.order .cart{
 		padding: 0 11px 0 83px;

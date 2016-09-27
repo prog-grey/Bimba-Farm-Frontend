@@ -19,8 +19,8 @@
 </head>
 <body>
 
-<div class="template"></div>
-<div class="main">
+<!--div class="template"></div>
+<div class="main"-->
 	<header>
 		<div class="container">
 			<div class="row headerTop">
@@ -36,25 +36,25 @@
 						<li><a href="#" class="activeItemListHeaderTop">$</a></li>
 					</ul>
 					<address>
-						<span class="phoneNumber"><i class="mdi mdi-phone" aria-hidden="true"></i>800-2345-6789</span>
-						<span class="workingHours">7 Days a week from 9:00 am to 7:00 pm</span>
+						<span class="phoneNumber"><i class="mdi mdi-phone" aria-hidden="true"></i>050-123-45-67</span>
+						<span class="workingHours">7 дней в неделю с 8:00 до 20:00</span>
 					</address>
 					<div class="clearfix visible-sm-block visible-xs-block"></div>
 					<ul class="list-inline userAccount hidden-xs">
 						<li><a href="#">Личный Кабинет</a></li>
-						<li class="account"><a href="#"><i class="mdi mdi-key" aria-hidden="true"></i>Авторизация</a></li>
+						<li class="account"><a href="login.html"><i class="mdi mdi-key" aria-hidden="true"></i>Авторизация</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="row headerBotton">
 				<div class="col-xs-5">
-					<a href="#" class="logo"><img src="img/logo.png" class="img-responsive"/></a>
+					<a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive"/></a>
 				</div>
 				<div class="col-md-6 col-md-offset-1 col-xs-7">
 					<div class="order pull-right">
 						<div class="cart hidden-xs">
-							<a href="#"><i class="mdi mdi-cart" aria-hidden="true"></i>
+							<a href="cart.html"><i class="mdi mdi-cart" aria-hidden="true"></i>
 								<span class="hidden-sm">корзина</span>
 								<span class="countProductInCart"> 0</span>
 							</a>
@@ -79,16 +79,16 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">daily disposables <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Two Weekly Disposables</a></li>
-						<li><a href="#">Monthly Disposables</a></li>
-						<li><a href="#">Extended Wear Lenses</a></li>
-						<li><a href="#">Coloured Contact Lenses</a></li>
+						<li class="active"><a href="index.html">Главная<span class="sr-only">(current)</span></a></li>
+						<li><a href="productCatalog.html">Каталог</a></li>
+						<li><a href="#">доставка и оплата</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="contact.html">Контакты</a></li>
 					</ul>
 					<div class="searchBlock">
 						<form class="navbar-form navbar-right" id="formSearch">
-							<input type="text" class="form-control" placeholder="Введите название...">
-							<button type="submit" class="btn btn-default">поиск</button>
+							<input type="text" class="form-control" placeholder="Введите название..." name="searchInput">
+							<button type="submit" class="btn btn-default" name="searchBtn">поиск</button>
 						</form>
 					</div>
 					<div class="searchIcon pull-right navbar-right"><i class="mdi mdi-magnify" aria-hidden="true"></i></div>
@@ -113,79 +113,85 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="table-responsive productInCart">
-						<table class="table tableCart text-center">
-							<thead>
-								<tr>
-									<th>изображение</th>
-									<th>название</th>
-									<th>количество</th>
-									<th>цена за шт.</th>
-									<th>итого</th>
-									<th></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<a href="#" class="productLinkImgCart">
-											<img src="img//product/productCart/product-1-100x100.png" class="img-responsive"/>
-										</a>
-									</td>
-									<td class="cellProductName">
-										<a href="#" class="productName">Acuvue Oasys</a><br/>
-										<strong>Производитель: </strong><span>Дарниця</span>
-									</td>
-									<td>
-										<div class="counterProduct">
-											<button class="btn btnMinus mdi mdi-minus"></button>
-											<input class="countProduct" type="text" name="countProduct" value="5" size="3">
-											<button class="btn btnPlus mdi mdi-plus"></button>
-										</div>
-									</td>
-									<td><div class="productPrice">$44.00</div></td>
-									<td><div class="productPrice totalPrice">$44.00</div></td>
-									<td><button type="buttom" class="delProductFromCart"><i class="mdi mdi-delete" aria-hidden="true"></i></button></td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#" class="productLinkImgCart">
-											<img src="img/product/productCart/product-7-100x100.png" class="img-responsive"/>
-										</a>
-									</td>
-									<td class="cellProductName">
-										<a href="#" class="productName">Avaira Contact Lenses</a><br/>
-										<strong>Производитель: </strong><span>Дарниця</span>
-									</td>
-									<td>
-										<div class="counterProduct">
-											<button class="btn btnMinus mdi mdi-minus"></button>
-											<input class="countProduct" type="text" name="countProduct" value="5" size="3">
-											<button class="btn btnPlus mdi mdi-plus"></button>
-										</div>
-									</td>
-									<td><div class="productPrice">$16.00</div></td>
-									<td><div class="productPrice totalPrice">$16.00</div></td>
-									<td><button type="buttom" class="delProductFromCart"><i class="mdi mdi-delete" aria-hidden="true"></i></button></td>
-								</tr>
-								<tr>
-									<td colspan="4" class="summa"><strong>Сумма:</strong></td>
-									<td><div class="productPrice totalPrice">$60.00</div></td>
-								</tr>
-								<tr>
-									<td colspan="4" class="sale"><strong>Скидка:</strong></td>
-									<td><div class="productPrice totalPrice">$5.50</div></td>
-								</tr>
-								<tr>
-									<td colspan="4" class="total"><strong>Итого к оплате:</strong></td>
-									<td><div class="productPrice totalSum">$54.50</div></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="col-xs-12">
-						<button type="submit" class="btn addToCart pull-right">подтверждение заказа</button>
-					</div>
+					<form action="#" method="post" id="contactForm" name="cartForm">
+						<div class="table-responsive productInCart">
+							<table class="table tableCart text-center">
+								<thead>
+									<tr>
+										<th>изображение</th>
+										<th>название</th>
+										<th>количество</th>
+										<th>цена за шт.</th>
+										<th>итого</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="#" class="productLinkImgCart">
+												<img src="img//product/productCart/product-1-100x100.png" class="img-responsive"/>
+											</a>
+										</td>
+										<td class="cellProductName">
+											<input type="hidden" name="id" value="">
+											<a href="#" class="productName">Acuvue Oasys</a><br/>
+											<strong>Производитель: </strong><span>Дарниця</span>
+										</td>
+										<td>
+											<div class="counterProduct">
+												<button type="button" class="btn btnMinus mdi mdi-minus"></button>
+												<input class="countProduct" type="text" name="countProduct" value="5" size="3">
+												<button type="button" class="btn btnPlus mdi mdi-plus"></button>
+											</div>
+										</td>
+										<td><div class="productPrice">$44.00</div></td>
+										<td><div class="productPrice totalPrice">$44.00</div></td>
+										<td><button type="button" class="delProductFromCart" name="delProductFromCart"><i class="mdi mdi-delete" aria-hidden="true"></i></button></td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="productLinkImgCart">
+												<img src="img/product/productCart/product-7-100x100.png" class="img-responsive"/>
+											</a>
+										</td>
+										<td class="cellProductName">
+											<input type="hidden" name="id" value="">
+											<a href="#" class="productName">Avaira Contact Lenses</a><br/>
+											<strong>Производитель: </strong><span>Дарниця</span>
+										</td>
+										<td>
+											<div class="counterProduct">
+												<button type="button" class="btn btnMinus mdi mdi-minus"></button>
+												<input class="countProduct" type="text" name="countProduct" value="5" size="3">
+												<button type="button" class="btn btnPlus mdi mdi-plus"></button>
+											</div>
+										</td>
+										<td><div class="productPrice">$16.00</div></td>
+										<td><div class="productPrice totalPrice">$16.00</div></td>
+										<td><button type="button" class="delProductFromCart" name="delProductFromCart"><i class="mdi mdi-delete" aria-hidden="true"></i></button></td>
+									</tr>
+									<tr>
+										<td colspan="4" class="summa"><strong>Сумма:</strong></td>
+										<td><div class="productPrice totalPrice">$60.00</div></td>
+									</tr>
+									<tr>
+										<td colspan="4" class="sale"><strong>Скидка:</strong></td>
+										<td><div class="productPrice totalPrice">$5.50</div></td>
+									</tr>
+									<tr>
+										<td colspan="4" class="total"><strong>Итого к оплате:</strong></td>
+										<td><div class="productPrice totalSum">$54.50</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-xs-12">
+							<label for="exampleInputPassword1">Примечание</label>
+							<textarea name="message" class="form-control" ></textarea>
+							<button type="submit" class="btn addToCart pull-right">подтверждение заказа</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</section>
@@ -205,38 +211,31 @@
 							<li><a href="#">Политика конфиденциальности</a></li>
 							<li><a href="#">Условия использования</a></li>
 							<li><a href="#">Связаться с нами</a></li>
-							<li><a href="#">Возврат товара</a></li>
-							<li><a href="#">Карта сайта</a></li>
-							<li><a href="#">Блог</a></li>
 						</ul>
 					</div>
 					<div class="col-md-2 col-xs-6">
 						<ul class="footerNavMenu">
 							<li><a href="#">Производители</a></li>
-							<li><a href="#">Подарочные сертификаты</a></li>
-							<li><a href="#">Партнерская программа</a></li>
-							<li><a href="#">Акции</a></li>
-							<li><a href="#">Личный Кабинет</a></li>
+							<li><a href="#">Товары со скидкой</a></li>
+							<li><a href="login.html">Личный Кабинет</a></li>
 							<li><a href="#">История заказов</a></li>
-							<li><a href="#">Закладки</a></li>
-							<li><a href="#">Рассылка</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4 col-xs-6 footerContact">
 						<ul>
 							<li><i class="mdi mdi-map-marker" aria-hidden="true"></i>
-								<a href="https://goo.gl/maps/AgwvcDuJVXN2">My Company Glasgow D04 89GR</a>
+								<a href="https://goo.gl/maps/AgwvcDuJVXN2">г. Полтава, ул. Соборности</a>
 							</li>
-							<li><i class="mdi mdi-phone" aria-hidden="true"></i><a href="callto:800-2345-6789">800-2345-6789</a></li>
+							<li><i class="mdi mdi-phone" aria-hidden="true"></i><a href="callto:800-2345-6789">050-123-45-67</a></li>
 							<li><i class="mdi mdi-email" aria-hidden="true"></i><a href="mailto:info@demolink.org">info@demolink.org</a></li>
-							<li><i class="mdi mdi-clock" aria-hidden="true"></i>7 Days a week from 9:00 am to 7:00 pm</li>
+							<li><i class="mdi mdi-clock" aria-hidden="true"></i>7 дней в неделю с 8:00 до 20:00</li>
 						</ul>
 					</div>
 					<div class="col-md-3 col-xs-6 social">
-						<h4>newsletter</h4>
-						<form action="#" method="POST" class="form-inline" id="formSubscription">
-							<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your e-mail">
-							<button type="submit" class="btn btn-default"><i class="mdi mdi-chevron-right" aria-hidden="true"></i></button>
+						<h4>Подписка</h4>
+						<form class="form-inline" id="formSubscription" name="formSubscription">
+							<input name="formSubscription" type="email" class="form-control" id="exampleInputEmail2" placeholder="Введите свой e-mail">
+							<button name="submitSubscription" type="submit" class="btn btn-default"><i class="mdi mdi-chevron-right" aria-hidden="true"></i></button>
 						</form>
 						<ul class="list-inline socialIcons">
 							<li><a href="#"><i class="mdi mdi-facebook" aria-hidden="true"></i></a></li>
@@ -253,7 +252,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copyrightContent">
-							<p>Работает на OpenCart Contact Lens Store © 2016</p>
+							<p>Lens Store © 2016</p>
 						</div>
 					</div>
 				</div>
@@ -264,7 +263,7 @@
 
 	<button type="button" class="btn btnToTop mdi mdi-chevron-up"></button>
 
-</div>
+<!--/div-->
 
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

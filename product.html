@@ -19,8 +19,8 @@
 </head>
 <body>
 
-<div class="template"></div>
-<div class="main">
+<!--div class="template"></div>
+<div class="main"-->
 	<header>
 		<div class="container">
 			<div class="row headerTop">
@@ -36,8 +36,8 @@
 						<li><a href="#" class="activeItemListHeaderTop">$</a></li>
 					</ul>
 					<address>
-						<span class="phoneNumber"><i class="mdi mdi-phone" aria-hidden="true"></i>800-2345-6789</span>
-						<span class="workingHours">7 Days a week from 9:00 am to 7:00 pm</span>
+						<span class="phoneNumber"><i class="mdi mdi-phone" aria-hidden="true"></i>050-123-45-67</span>
+						<span class="workingHours">7 дней в неделю с 8:00 до 20:00</span>
 					</address>
 					<div class="clearfix visible-sm-block visible-xs-block"></div>
 					<ul class="list-inline userAccount hidden-xs">
@@ -46,9 +46,10 @@
 					</ul>
 				</div>
 			</div>
+
 			<div class="row headerBotton">
 				<div class="col-xs-5">
-					<a href="#" class="logo"><img src="img/logo.png" class="img-responsive"/></a>
+					<a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive"/></a>
 				</div>
 				<div class="col-md-6 col-md-offset-1 col-xs-7">
 					<div class="order pull-right">
@@ -66,35 +67,36 @@
 			</div>
 		</div>
 		<div class="navig">
-			<nav class="navbar navbarMain" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">daily disposables <span class="sr-only">(current)</span></a></li>
-							<li><a href="#">Two Weekly Disposables</a></li>
-							<li><a href="#">Monthly Disposables</a></li>
-							<li><a href="#">Extended Wear Lenses</a></li>
-							<li><a href="#">Coloured Contact Lenses</a></li>
-						</ul>
-						<div class="searchBlock">
-							<form class="navbar-form navbar-right" id="formSearch">
-								<input type="text" class="form-control" placeholder="Введите название...">
-								<button type="submit" class="btn btn-default">поиск</button>
-							</form>
-						</div>
-						<div class="searchIcon pull-right navbar-right"><i class="mdi mdi-magnify" aria-hidden="true"></i></div>
-					</div>
+		<nav class="navbar navbarMain" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</div>
-			</nav>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Главная<span class="sr-only">(current)</span></a></li>
+						<li><a href="productCatalog.html">Каталог</a></li>
+						<li><a href="#">доставка и оплата</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="contact.html">Контакты</a></li>
+					</ul>
+					<div class="searchBlock">
+						<form class="navbar-form navbar-right" id="formSearch">
+							<input type="text" class="form-control" placeholder="Введите название..." name="searchInput">
+							<button type="submit" class="btn btn-default" name="searchBtn">поиск</button>
+						</form>
+					</div>
+					<div class="searchIcon pull-right navbar-right"><i class="mdi mdi-magnify" aria-hidden="true"></i></div>
+				</div>
+			</div>
+		</nav>
 		</div>
+
 	</header>
 
 	<div class="container">
@@ -119,13 +121,16 @@
 								<li><strong>Наличие: </strong><span class="stock">Есть в наличии</span></li>
 							</ul>
 							<div class="productCounterAndToCartBlock">
-								<strong>Количество: </strong>
-								<div class="counterProduct">
-									<button class="btn btnMinus mdi mdi-minus"></button>
-									<input class="countProduct" type="text" name="countProduct" value="5" size="3">
-									<button class="btn btnPlus mdi mdi-plus"></button>
-								</div>
-								<button class="btn addToCart">купить</button>
+								<form method="post" name="addToCartForm">
+									<input type="hidden" name="id" value="">
+									<strong>Количество: </strong>
+									<div class="counterProduct">
+										<button type="button" class="btn btnMinus mdi mdi-minus"></button>
+										<input class="countProduct" type="text" name="countProduct" value="5" size="3">
+										<button type="button" class="btn btnPlus mdi mdi-plus"></button>
+									</div>
+									<button type="button" class="btn addToCart">купить</button>
+								</form>
 							</div>
 						</div>
 						<div class="col-sm-4 col-sm-pull-8 col-xs-6 col-xs-offset-3 col-sm-offset-0">
@@ -187,6 +192,7 @@
 	</div>
 
 	<footer>
+
 		<section id="footerNav">
 			<div class="container">
 				<div class="row">
@@ -197,38 +203,31 @@
 							<li><a href="#">Политика конфиденциальности</a></li>
 							<li><a href="#">Условия использования</a></li>
 							<li><a href="#">Связаться с нами</a></li>
-							<li><a href="#">Возврат товара</a></li>
-							<li><a href="#">Карта сайта</a></li>
-							<li><a href="#">Блог</a></li>
 						</ul>
 					</div>
 					<div class="col-md-2 col-xs-6">
 						<ul class="footerNavMenu">
 							<li><a href="#">Производители</a></li>
-							<li><a href="#">Подарочные сертификаты</a></li>
-							<li><a href="#">Партнерская программа</a></li>
-							<li><a href="#">Акции</a></li>
-							<li><a href="#">Личный Кабинет</a></li>
+							<li><a href="#">Товары со скидкой</a></li>
+							<li><a href="login.html">Личный Кабинет</a></li>
 							<li><a href="#">История заказов</a></li>
-							<li><a href="#">Закладки</a></li>
-							<li><a href="#">Рассылка</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4 col-xs-6 footerContact">
 						<ul>
 							<li><i class="mdi mdi-map-marker" aria-hidden="true"></i>
-								<a href="https://goo.gl/maps/AgwvcDuJVXN2">My Company Glasgow D04 89GR</a>
+								<a href="https://goo.gl/maps/AgwvcDuJVXN2">г. Полтава, ул. Соборности</a>
 							</li>
-							<li><i class="mdi mdi-phone" aria-hidden="true"></i><a href="callto:800-2345-6789">800-2345-6789</a></li>
+							<li><i class="mdi mdi-phone" aria-hidden="true"></i><a href="callto:800-2345-6789">050-123-45-67</a></li>
 							<li><i class="mdi mdi-email" aria-hidden="true"></i><a href="mailto:info@demolink.org">info@demolink.org</a></li>
-							<li><i class="mdi mdi-clock" aria-hidden="true"></i>7 Days a week from 9:00 am to 7:00 pm</li>
+							<li><i class="mdi mdi-clock" aria-hidden="true"></i>7 дней в неделю с 8:00 до 20:00</li>
 						</ul>
 					</div>
 					<div class="col-md-3 col-xs-6 social">
-						<h4>newsletter</h4>
-						<form class="form-inline" id="formSubscription">
-							<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your e-mail">
-							<button type="submit" class="btn btn-default"><i class="mdi mdi-chevron-right" aria-hidden="true"></i></button>
+						<h4>Подписка</h4>
+						<form class="form-inline" id="formSubscription" name="formSubscription">
+							<input name="formSubscription" type="email" class="form-control" id="exampleInputEmail2" placeholder="Введите свой e-mail">
+							<button name="submitSubscription" type="submit" class="btn btn-default"><i class="mdi mdi-chevron-right" aria-hidden="true"></i></button>
 						</form>
 						<ul class="list-inline socialIcons">
 							<li><a href="#"><i class="mdi mdi-facebook" aria-hidden="true"></i></a></li>
@@ -239,22 +238,24 @@
 				</div>
 			</div>
 		</section>
+
 		<section id="copyright">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copyrightContent">
-							<p>Работает на OpenCart Contact Lens Store © 2016</p>
+							<p>Lens Store © 2016</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 	</footer>
 
 	<button type="button" class="btn btnToTop mdi mdi-chevron-up"></button>
 
-</div>
+<!--/div-->
 
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

@@ -36,8 +36,8 @@
 						<li><a href="#" class="activeItemListHeaderTop">$</a></li>
 					</ul>
 					<address>
-						<span class="phoneNumber"><i class="mdi mdi-phone" aria-hidden="true"></i>800-2345-6789</span>
-						<span class="workingHours">7 Days a week from 9:00 am to 7:00 pm</span>
+						<span class="phoneNumber"><i class="mdi mdi-phone" aria-hidden="true"></i>050-123-45-67</span>
+						<span class="workingHours">7 дней в неделю с 8:00 до 20:00</span>
 					</address>
 					<div class="clearfix visible-sm-block visible-xs-block"></div>
 					<ul class="list-inline userAccount hidden-xs">
@@ -79,16 +79,16 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">daily disposables <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Two Weekly Disposables</a></li>
-						<li><a href="#">Monthly Disposables</a></li>
-						<li><a href="#">Extended Wear Lenses</a></li>
-						<li><a href="#">Coloured Contact Lenses</a></li>
+						<li class="active"><a href="index.html">Главная<span class="sr-only">(current)</span></a></li>
+						<li><a href="productCatalog.html">Каталог</a></li>
+						<li><a href="#">доставка и оплата</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="contact.html">Контакты</a></li>
 					</ul>
 					<div class="searchBlock">
 						<form class="navbar-form navbar-right" id="formSearch">
-							<input type="text" class="form-control" placeholder="Введите название...">
-							<button type="submit" class="btn btn-default">поиск</button>
+							<input type="text" class="form-control" placeholder="Введите название..." name="searchInput">
+							<button type="submit" class="btn btn-default" name="searchBtn">поиск</button>
 						</form>
 					</div>
 					<div class="searchIcon pull-right navbar-right"><i class="mdi mdi-magnify" aria-hidden="true"></i></div>
@@ -126,7 +126,7 @@
 		<div class="container">
 			<div class="row headerName">
 				<div class="col-md-12 text-center">
-					<h3><a href="#">Специальные предложения</a></h3>
+					<h3><a href="#">Товары со скидкой</a></h3>
 				</div>
 			</div>
 			<div class="row">
@@ -135,48 +135,60 @@
 					<a href="#" class="productLinkImg"><img src="img/product/product-25-200x200.png" class="img-responsive"/></a>
 					<a href="#" class="productName">Purevision2 for Astigmatism</a>
 					<div class="productPrice">$33.00</div>
-					<div class="counterProduct">
-						<button class="btn btnMinus"><i class="mdi mdi-minus" aria-hidden="true"></i></button>
-						<input class="countProduct" type="text" name="countProduct" value="5" size="3">
-						<button class="btn btnPlus"><i class="mdi mdi-plus" aria-hidden="true"></i></button>
-					</div>
-					<button class="btn addToCart">купить</button>
+					<form method="post" name="addToCartForm">
+						<input type="hidden" name="id" value="">
+						<div class="counterProduct">
+							<button name="btnMinus" type="button" class="btn btnMinus mdi mdi-minus"></button>
+							<input class="countProduct" type="text" name="countProduct" value="5" size="3">
+							<button name="btnPlus" type="button" class="btn btnPlus mdi mdi-plus"></button>
+						</div>
+						<button name="btnAddToCart" type="button" class="btn addToCart">купить</button>
+					</form>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6 itemSpecialProduct">
 					<div class="saleIcon">sale!</div>
 					<a href="#" class="productLinkImg"><img src="img/product/product-16-200x200.png" class="img-responsive"/></a>
 					<a href="#" class="productName">Baush + Lomb Bio True Multi</a>
 					<div class="productPrice">$20.00</div>
-					<div class="counterProduct">
-						<button class="btn btnMinus"><i class="mdi mdi-minus" aria-hidden="true"></i></button>
-						<input class="countProduct" type="text" name="countProduct" value="5" size="3">
-						<button class="btn btnPlus"><i class="mdi mdi-plus" aria-hidden="true"></i></button>
-					</div>
-					<button class="btn addToCart">купить</button>
+					<form method="post" name="addToCartForm">
+						<input type="hidden" name="id" value="">
+						<div class="counterProduct">
+							<button name="btnMinus" type="button" class="btn btnMinus mdi mdi-minus"></button>
+							<input class="countProduct" type="text" name="countProduct" value="5" size="3">
+							<button name="btnPlus" type="button" class="btn btnPlus mdi mdi-plus"></button>
+						</div>
+						<button name="btnAddToCart" type="button" class="btn addToCart">купить</button>
+					</form>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6 itemSpecialProduct">
 					<div class="saleIcon">sale!</div>
 					<a href="#" class="productLinkImg"><img src="img/product/product-1-200x200.png" class="img-responsive"/></a>
 					<a href="#" class="productName">Acuvue Oasys</a>
 					<div class="productPrice">$24.00 <span class="productOldPrice">$30.00</span></div>
-					<div class="counterProduct">
-						<button class="btn btnMinus"><i class="mdi mdi-minus" aria-hidden="true"></i></button>
-						<input class="countProduct" type="text" name="countProduct" value="5" size="3">
-						<button class="btn btnPlus"><i class="mdi mdi-plus" aria-hidden="true"></i></button>
-					</div>
-					<button class="btn addToCart">купить</button>
+					<form method="post" name="addToCartForm">
+						<input type="hidden" name="id" value="">
+						<div class="counterProduct">
+							<button name="btnMinus" type="button" class="btn btnMinus mdi mdi-minus"></button>
+							<input class="countProduct" type="text" name="countProduct" value="5" size="3">
+							<button name="btnPlus" type="button" class="btn btnPlus mdi mdi-plus"></button>
+						</div>
+						<button name="btnAddToCart" type="button" class="btn addToCart">купить</button>
+					</form>
 				</div>
 				<div class="col-md-3 col-sm-4 col-xs-6 itemSpecialProduct">
 					<div class="saleIcon">sale!</div>
 					<a href="#" class="productLinkImg"><img src="img/product/product-13-200x200.png" class="img-responsive"/></a>
 					<a href="#" class="productName">SofLens Daily Disposables</a>
 					<div class="productPrice">$30.00</div>
-					<div class="counterProduct">
-						<button class="btn btnMinus"><i class="mdi mdi-minus" aria-hidden="true"></i></button>
-						<input class="countProduct" type="text" name="countProduct" value="5" size="3">
-						<button class="btn btnPlus"><i class="mdi mdi-plus" aria-hidden="true"></i></button>
-					</div>
-					<button class="btn addToCart">купить</button>
+					<form method="post" name="addToCartForm">
+						<input type="hidden" name="id" value="">
+						<div class="counterProduct">
+							<button name="btnMinus" type="button" class="btn btnMinus mdi mdi-minus"></button>
+							<input class="countProduct" type="text" name="countProduct" value="5" size="3">
+							<button name="btnPlus" type="button" class="btn btnPlus mdi mdi-plus"></button>
+						</div>
+						<button name="btnAddToCart" type="button" class="btn addToCart">купить</button>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -203,17 +215,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 infoBlock">
-					<h1><i class="thin-icon-box"></i>Shipping and delivery</h1>
-					<p>Here you can read some details about a nifty little lifecycle of your order's journey from the time you place your order to your new treasures arriving at your doorstep.</p>
+					<h1><i class="mdi mdi-sale"></i>Дисконтная программа</h1>
+					<p>Система накопительной скидки действует только для зарегестрированных пользователей и предусматривает шесть уровней скидок в зависимости от накопленной Вами суммы покупок..</p>
+					<a href="#" class="btnLinkContact">Подробнее</a>
 				</div>
 				<div class="col-md-4 infoBlock">
-					<h1><i class="thin-icon-documents"></i>Payment methods</h1>
-					<p>It is equally important to choose the solution which offers a specific selection of credit cards that are most popular in the merchants target markets. We take Visa & MasterCard as they are widely used by cyber customers.</p>
+					<h1><i class="thin-icon-documents"></i>Способы оплаты</h1>
+					<p>Оплата заказа производиться при получении товара. У нас вы можете платить начинымы, а так же мы принимаем платёжные карточки</p>
 				</div>
 				<div class="col-md-4 infoBlock">
-					<h1><i class="thin-icon-support"></i>Contact us</h1>
-					<p>You can contact us any way that is convenient for you. We are available 24/7 via fax, email or telephone. You can also use a quick contact form or visit our office personally.</p>
-					<a href="contact.html" class="btnLinkContact">get in touch</a>
+					<h1><i class="thin-icon-support"></i>Свяжитесь с нами</h1>
+					<p>Вы можете связаться с нами любым удобным для вас способом. Мы доступны 24/7 по факсу, электронной почте или по телефону. Вы также можете использовать контактную форму или посетив наш офис лично.</p>
+					<a href="contact.html" class="btnLinkContact">связаться</a>
 				</div>
 			</div>
 		</div>
@@ -231,38 +244,31 @@
 							<li><a href="#">Политика конфиденциальности</a></li>
 							<li><a href="#">Условия использования</a></li>
 							<li><a href="#">Связаться с нами</a></li>
-							<li><a href="#">Возврат товара</a></li>
-							<li><a href="#">Карта сайта</a></li>
-							<li><a href="#">Блог</a></li>
 						</ul>
 					</div>
 					<div class="col-md-2 col-xs-6">
 						<ul class="footerNavMenu">
 							<li><a href="#">Производители</a></li>
-							<li><a href="#">Подарочные сертификаты</a></li>
-							<li><a href="#">Партнерская программа</a></li>
-							<li><a href="#">Акции</a></li>
-							<li><a href="#">Личный Кабинет</a></li>
+							<li><a href="#">Товары со скидкой</a></li>
+							<li><a href="login.html">Личный Кабинет</a></li>
 							<li><a href="#">История заказов</a></li>
-							<li><a href="#">Закладки</a></li>
-							<li><a href="#">Рассылка</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4 col-xs-6 footerContact">
 						<ul>
 							<li><i class="mdi mdi-map-marker" aria-hidden="true"></i>
-								<a href="https://goo.gl/maps/AgwvcDuJVXN2">My Company Glasgow D04 89GR</a>
+								<a href="https://goo.gl/maps/AgwvcDuJVXN2">г. Полтава, ул. Соборности</a>
 							</li>
-							<li><i class="mdi mdi-phone" aria-hidden="true"></i><a href="callto:800-2345-6789">800-2345-6789</a></li>
+							<li><i class="mdi mdi-phone" aria-hidden="true"></i><a href="callto:800-2345-6789">050-123-45-67</a></li>
 							<li><i class="mdi mdi-email" aria-hidden="true"></i><a href="mailto:info@demolink.org">info@demolink.org</a></li>
-							<li><i class="mdi mdi-clock" aria-hidden="true"></i>7 Days a week from 9:00 am to 7:00 pm</li>
+							<li><i class="mdi mdi-clock" aria-hidden="true"></i>7 дней в неделю с 8:00 до 20:00</li>
 						</ul>
 					</div>
 					<div class="col-md-3 col-xs-6 social">
-						<h4>newsletter</h4>
-						<form class="form-inline" id="formSubscription">
-							<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your e-mail">
-							<button type="submit" class="btn btn-default"><i class="mdi mdi-chevron-right" aria-hidden="true"></i></button>
+						<h4>Подписка</h4>
+						<form class="form-inline" id="formSubscription" name="formSubscription">
+							<input name="formSubscription" type="email" class="form-control" id="exampleInputEmail2" placeholder="Введите свой e-mail">
+							<button name="submitSubscription" type="submit" class="btn btn-default"><i class="mdi mdi-chevron-right" aria-hidden="true"></i></button>
 						</form>
 						<ul class="list-inline socialIcons">
 							<li><a href="#"><i class="mdi mdi-facebook" aria-hidden="true"></i></a></li>
@@ -279,7 +285,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copyrightContent">
-							<p>Работает на OpenCart Contact Lens Store © 2016</p>
+							<p>Lens Store © 2016</p>
 						</div>
 					</div>
 				</div>
